@@ -15,4 +15,9 @@ public class Moeda {
         return dolar;
     }
 
+    public String comprarDolar(String cpf, String nome){
+        this.calcularConversao();
+        return "O cliente com cpf: "+ cpf +"\nNome " + nome + " comprou na data de hoje a quantidade de $"+ this.quantidadeDolar;
+    }
+
 }
